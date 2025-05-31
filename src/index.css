@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+body {
+  @apply font-vazir bg-gradient-to-br from-green-50 to-green-100 text-quranNight text-center min-h-screen;
+  direction: rtl;
+}
+
+.quran-font {
+  @apply font-quran text-3xl leading-loose text-primary animate-fadeIn;
+}
+
+.quran-box {
+  @apply bg-white shadow-xl border border-quranGold rounded-3xl p-6 space-y-4 animate-fadeUp;
+}
+
+.quran-button {
+  @apply px-6 py-2 bg-primary hover:bg-emerald-700 text-white font-bold rounded-full transition duration-200;
+}
+
+.footer-text {
+  @apply mt-10 text-center text-sm text-gray-500;
+}
